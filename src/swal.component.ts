@@ -232,4 +232,13 @@ export class SwalComponent implements OnChanges, OnDestroy {
         //=> Return the unaltered promise
         return promise;
     }
+    
+    /**
+     * Shows if the SweetAlert is opened
+     *
+     * Returns the actual value of isCurrentlyShown
+     */
+    public isOpened(): boolean {
+        return this.isCurrentlyShown;
+    }
 }
